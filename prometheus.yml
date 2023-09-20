@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name:'node'
+    static_configs:
+      - targets: ['localhost:9100'] # Here I'll add my server's IP and port.
