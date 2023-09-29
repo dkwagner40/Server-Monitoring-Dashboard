@@ -1,0 +1,8 @@
+version: '3'
+services:
+  prometheus:
+    build: .
+    ports:
+      - "9090:9090"
+    volumes:
+      - /path/to/prometheus:/etc/prometheus
