@@ -1,9 +1,10 @@
-
-          version: '3'
-          services:
-            prometheus:
-              build: .
-              ports:
-                - "9090:9090"
-              volumes:
-                - /* I will hide this for now for security reasons /*
+version: '3'
+services:
+  prometheus:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Specify the Dockerfile if it's not in the same directory
+    ports:
+      - "9090:9090"
+    volumes:
+      - /path/to/prometheus:/Documents// # Hiding for security reasons
